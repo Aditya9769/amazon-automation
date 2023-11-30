@@ -25,8 +25,8 @@ public class homePage {
         driver.get(url);
     }
 
-    public void searchProduct() {
-        searchBox.sendKeys("iphone");
+    public void searchProduct(String product) {
+        searchBox.sendKeys(product);
         searchButton.click();
     }
 }

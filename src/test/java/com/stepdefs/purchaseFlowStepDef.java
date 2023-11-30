@@ -13,7 +13,7 @@ public class purchaseFlowStepDef {
     homePage homepage = new homePage();
     searchResultsPage searchResultsPage = new searchResultsPage();
     productDetailsPage productDetailsPage = new productDetailsPage();
-    String productPrice; // Variable to store product price
+    String productPrice;
 
     @Given("User is on the Amazon.in homepage")
     public void userIsOnTheAmazonHomepage() {
@@ -22,7 +22,7 @@ public class purchaseFlowStepDef {
 
     @When("User searches for iphone")
     public void userSearchesForIphone() {
-        homepage.searchProduct();
+        homepage.searchProduct("iphone");
     }
 
     @When("User selects an iPhone from the search results")

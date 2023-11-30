@@ -1,7 +1,6 @@
 package com.pages;
 
 import com.baseDriver.BaseDriver;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,14 +30,10 @@ public class productDetailsPage {
 
     public String storeProductPrice() {
         String price = productPrice.getText();
-        // You may need to handle formatting or conversion based on your requirements
         return price;
     }
 
     public void addProductToCart() {
-        // Additional steps to add the product to the cart
-        // This could involve clicking "Add to Cart" button, handling pop-ups, etc.
-        // For simplicity, assuming the product is added successfully.
         addToCartButton.click();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
